@@ -1,7 +1,7 @@
 # Ziglings
 
 ## Problems solved thus far
-|Problem name            |
+|Done  |
 |:-----------------------|
 | 001_hello              | 
 | 002_std                |
