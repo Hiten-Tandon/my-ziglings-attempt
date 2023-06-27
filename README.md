@@ -75,9 +75,6 @@
 | 070_comptime5          |
 | 071_comptime6          |
 | 072_comptime7          |
-
-|TODO                    |
-|:-----------------------|
 | 073_comptime8          |
 | 074_comptime9          |
 | 075_quiz8              |
@@ -86,6 +83,9 @@
 | 078_sentinels3         |
 | 079_quoted_identifiers |
 | 080_anonymous_structs  |
+
+|TODO                    |
+|:-----------------------|
 | 081_anonymous_structs2 |
 | 082_anonymous_structs3 |
 | 083_anonymous_lists    |
