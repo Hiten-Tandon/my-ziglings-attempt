@@ -83,23 +83,10 @@
 | 078_sentinels3         |
 | 079_quoted_identifiers |
 | 080_anonymous_structs  |
-
-|TODO                    |
-|:-----------------------|
 | 081_anonymous_structs2 |
 | 082_anonymous_structs3 |
 | 083_anonymous_lists    |
-| 084_async              |
-| 085_async2             |
-| 086_async3             |
-| 087_async4             |
-| 088_async5             |
-| 089_async6             |
-| 090_async7             |
-| 091_async8             |
 | 092_interfaces         |
-| 093_hello_c            |
-| 094_c_math             |
 | 095_for3               |
 | 096_memory_allocation  |
 | 097_bit_manipulation   |
@@ -110,3 +97,16 @@
 | 102_testing            |
 | 103_tokenization       |
 | 999_the_end            |
+
+|TODO                    |
+|:-----------------------|
+| 084_async              |
+| 085_async2             |
+| 086_async3             |
+| 087_async4             |
+| 088_async5             |
+| 089_async6             |
+| 090_async7             |
+| 091_async8             |
+| 093_hello_c            |
+| 094_c_math             |
