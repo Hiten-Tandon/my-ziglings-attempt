@@ -87,6 +87,8 @@
 | 082_anonymous_structs3 |
 | 083_anonymous_lists    |
 | 092_interfaces         |
+| 093_hello_c            |
+| 094_c_math             |
 | 095_for3               |
 | 096_memory_allocation  |
 | 097_bit_manipulation   |
@@ -108,5 +110,3 @@
 | 089_async6             |
 | 090_async7             |
 | 091_async8             |
-| 093_hello_c            |
-| 094_c_math             |

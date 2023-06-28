@@ -18,7 +18,7 @@
 const std = @import("std");
 
 const c = @cImport({
-    @cInclude("cmath.h");
+    @cInclude("math.h");
 });
 
 pub fn main() !void {
