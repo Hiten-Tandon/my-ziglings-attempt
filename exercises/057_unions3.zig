@@ -14,7 +14,9 @@
 // explicit InsectStat enum for you!
 //
 const std = @import("std");
-const InsectStat = enum { still_alive, flowers_visited };
+
+const InsectStat = enum { flowers_visited, still_alive };
+
 const Insect = union(InsectStat) {
     flowers_visited: u16,
     still_alive: bool,

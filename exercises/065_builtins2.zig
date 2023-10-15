@@ -24,9 +24,9 @@
 // Returns the innermost struct, enum, or union that a function
 // call is inside.
 //
-// 2. @typeInfo(comptime T: type) @import("std").builtin.TypeInfo
+// 2. @typeInfo(comptime T: type) @import("std").builtin.Type
 //
-// Returns information about any type in a TypeInfo union which
+// Returns information about any type in a data structure which
 // will contain different information depending on which type
 // you're examining.
 //
@@ -47,7 +47,7 @@ const Narcissus = struct {
     myself: *Narcissus = undefined,
     echo: void = undefined, // Alas, poor Echo!
 
-    pub fn fetchTheMostBeautifulType() type {
+    fn fetchTheMostBeautifulType() type {
         return @This();
     }
 };

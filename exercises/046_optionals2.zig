@@ -41,18 +41,18 @@ pub fn main() void {
 
 // This function visits all elephants once, starting with the
 // first elephant and following the tails to the next elephant.
-fn visitElephants(first_elephant: *Elephant) void {
+fn visitElephants(first_elephant: ?*Elephant) void {
     var e = first_elephant;
 
-    while (!e.visited) {
-        std.debug.print("Elephant {u}. ", .{e.letter});
-        e.visited = true;
+    while (!e.?.visited) {
+        std.debug.print("Elephant {u}. ", .{e.?.letter});
+        e.?.visited = true;
 
         // We should stop once we encounter a tail that
         // does NOT point to another element. What can
         // we put here to make that happen?
-        if (e.tail == null) return;
+        if (e.?.tail == null) return;
 
-        e = e.tail.?;
+        e = e.?.tail;
     }
 }

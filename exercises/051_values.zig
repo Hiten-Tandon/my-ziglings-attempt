@@ -159,7 +159,7 @@ pub fn main() void {
 
 // Fix 2 of 2 goes here:
 fn levelUp(character_access: *Character, xp: u32) void {
-    character_access.experience += xp;
+    character_access.*.experience += xp;
 }
 
 // And there's more!

@@ -43,7 +43,7 @@ const Schooner = struct {
         //
         // Please change this so that it sets a 0 scale to 1
         // instead.
-        if (my_scale == 0) my_scale = 1;
+        if (my_scale == 0) @compileError("Scale 1:0 is not valid!");
 
         self.scale = my_scale;
         self.hull_length /= my_scale;
@@ -81,7 +81,7 @@ pub fn main() void {
     shark.scaleMe(scale);
     shark.printMe();
 
-    scale -= 16; // 1:0 scale (oops, but DON'T FIX THIS!)
+    scale -= 15; // 1:0 scale (oops, but DON'T FIX THIS!)
 
     whale.scaleMe(scale);
     whale.printMe();

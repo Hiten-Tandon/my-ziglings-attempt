@@ -8,7 +8,7 @@
 //
 const std = @import("std");
 
-const Class = enum {
+const Role = enum {
     wizard,
     thief,
     bard,
@@ -16,7 +16,7 @@ const Class = enum {
 };
 
 const Character = struct {
-    class: Class,
+    role: Role,
     gold: u32,
     health: u8,
     experience: u32,
@@ -27,27 +27,22 @@ pub fn main() void {
 
     // Glorp the Wise
     chars[0] = Character{
-        .class = Class.wizard,
+        .role = Role.wizard,
         .gold = 20,
         .health = 100,
         .experience = 10,
     };
 
-    chars[1] = Character{
-        .class = Class.bard,
-        .gold = 10,
-        .health = 100,
-        .experience = 20,
-    };
     // Please add "Zump the Loud" with the following properties:
     //
-    //     class      bard
+    //     role       bard
     //     gold       10
     //     health     100
     //     experience 20
     //
     // Feel free to run this program without adding Zump. What does
     // it do and why?
+    chars[1] = Character{ .role = Role.bard, .gold = 10, .health = 100, .experience = 20 };
 
     // Printing all RPG characters in a loop:
     for (chars, 0..) |c, num| {

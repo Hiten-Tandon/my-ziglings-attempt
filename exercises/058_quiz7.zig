@@ -318,7 +318,7 @@ const HermitsNotebook = struct {
         // in our map since every Place is reachable by every other
         // Place.)
         if (destination_entry == null) {
-            return TripError.Unreachable;
+            unreachable;
         }
 
         // Variables hold the entry we're currently examining and an
@@ -417,7 +417,7 @@ pub fn main() void {
     };
 
     // Print the trip with a little helper function below.
-    try printTrip(trip[0..]);
+    printTrip(trip[0..]);
 }
 
 // Remember that trips will be a series of alternating TripItems
@@ -425,7 +425,7 @@ pub fn main() void {
 // The remaining space in the trip array will contain null values, so
 // we need to loop through the items in reverse, skipping nulls, until
 // we reach the destination at the front of the array.
-fn printTrip(trip: []?TripItem) !void {
+fn printTrip(trip: []?TripItem) void {
     // We convert the usize length to a u8 with @intCast(), a
     // builtin function just like @import().  We'll learn about
     // these properly in a later exercise.
